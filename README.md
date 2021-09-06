@@ -31,6 +31,6 @@ Download the datatset from [Baidu Driver](https://pan.baidu.com/s/1vzH_av0zCFhTL
 
 ## Training model
 1. Download the pretrained model from [Baidu Driver](https://pan.baidu.com/s/1O_3vCeruILrLcVkqnZauWQ)(spq9) or [Google Driver]() and put it into 'pre_model' foler.
-2. Run '''python ./tool/plain_train_net.py'''
+2. Run `python ./tool/plain_train_net.py`
 ## Testing model
 
