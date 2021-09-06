@@ -42,5 +42,7 @@ Download the datatset from [Baidu Driver](https://pan.baidu.com/s/1vzH_av0zCFhTL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 ## Result
+![alt text](./quantitative.png)
 
+![alt_text](./qualitative.png)
 
