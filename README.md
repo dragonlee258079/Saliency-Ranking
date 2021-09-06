@@ -35,5 +35,5 @@ Download the datatset from [Baidu Driver](https://pan.baidu.com/s/1vzH_av0zCFhTL
 3. The trained model will be saved in `./output` folder. Additionally, the evaluaion results produced during training process will be saved    in `./output/SA_SOR.txt` and            `./output/MAE.txt`. 
 ## Testing model
 1. Run `python ./tool/plain_test_net.py`.
-2. The prediction images will be saved in `./prediction`. And the metric score, **SA_SOR** and MAE, will be printed.
+2. The prediction images will be saved in `./prediction`.  And the metric score, **SA_SOR** and MAE, will be printed.
 
