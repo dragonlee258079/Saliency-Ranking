@@ -26,6 +26,6 @@ Download the datatset from [Baidu Driver](https://pan.baidu.com/s/1vzH_av0zCFhTL
 ````
 
 ### Training model
-
+> 1. cd './tool'
 ### Testing model
 
