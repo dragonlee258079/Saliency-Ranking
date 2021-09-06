@@ -10,10 +10,13 @@ Download the datatset from [Baidu Driver](https://pan.baidu.com/s/1vzH_av0zCFhTL
 ````
 -- dataset
    |-- Annotations
-   |   train.pkl
-   |   test.pkl
+   |   |-- | train.pkl
+   |   |-- | test.pkl
    |-- Images
-   |   |--train
-   |   |  |--|image
-   ...
+   |   |-- train
+   |   |-- |-- | image
+   |   |-- |-- | gt
+   |   |-- test
+   |   |-- |-- | image
+   |   |-- |-- | gt
 ````
