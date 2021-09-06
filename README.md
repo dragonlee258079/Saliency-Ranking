@@ -38,3 +38,9 @@ Download the datatset from [Baidu Driver](https://pan.baidu.com/s/1vzH_av0zCFhTL
 2. Run `python ./tool/plain_test_net.py`.
 3. The prediction images will be saved in `./prediction`.  And the metric score, **SA_SOR** and MAE, will be printed.
 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+## Result
+
+
