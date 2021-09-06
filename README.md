@@ -45,7 +45,7 @@ Download the datatset from [Baidu Driver](https://pan.baidu.com/s/1vzH_av0zCFhTL
 ![alt text](./quantitative.png)
 
 <center>
-<img src=https://github.com/dragonlee258079/Saliency-Ranking/blob/main/quantitative.png, width="40%">
+<img src=./qualitative.png, width="40%">
 
 ![alt_text](./qualitative.png)
 
