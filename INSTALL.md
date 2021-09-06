@@ -1,3 +1,5 @@
+This repo is based on [detectron2](https://github.com/facebookresearch/detectron2) framework.
+
 ### Requirements
 - Linux or macOS with Python ≥ 3.6
 - PyTorch ≥ 1.3
