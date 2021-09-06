@@ -8,7 +8,7 @@ This repo is based on [detectron2](https://github.com/facebookresearch/detectron
 - OpenCV, optional, needed by demo and visualization
 
 
-### Build Detectron2 from Source
+### Build the source code
 
 After having the above dependencies and gcc & g++ ≥ 5, run:
 ```
