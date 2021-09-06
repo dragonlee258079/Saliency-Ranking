@@ -5,10 +5,10 @@ Code release for the TPAMI 2021 paper "Instance-Level Relative Saliency Ranking 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-## Installation
+### Installation
 See [INSTALL.md](INSTALL.md).
 
-## Data Preparation
+### Data Preparation
 Download the datatset from [Baidu Driver](https://pan.baidu.com/s/1vzH_av0zCFhTL4WqpbTVmQ) (zsqn) or [Goggle Driver](https://drive.google.com/file/d/1R-S9yT0khNehAaA1M13N0AQGOicJS7uh/view?usp=sharing) and unzip them to './dataset'. Then the structure of the './dataset' folder will show as following:
 
 ````
