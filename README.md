@@ -47,4 +47,4 @@ Download the datatset from [Baidu Driver](https://pan.baidu.com/s/1vzH_av0zCFhTL
 ![alt_text](./qualitative.png)
 
 ## Metric
-We propose a new evaluation metirc for this task, which comprehensively considers salient instance detection, segmentation, and ranking performance. See [SA-SOR](./metric/readme.md)
+We propose a new evaluation metirc for this task, which comprehensively considers salient instance detection, segmentation, and ranking performance. See [SA-SOR](./metric).
