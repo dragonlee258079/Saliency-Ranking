@@ -2,6 +2,8 @@ This is the code for the **SA-SOR** metric proposed in the paper.
 
 In order to run the code, please prepare the `input_data` following the rules below:
 
+Suppose we have `N` images for testing. Each image containing `m` ground truth salient instances. And the number of the predicted salient instances is `n`. 
+
 >1. The `input_data` is a list in which an element (`img_data`) corresponding to an image.  
 >2. The `img_data` is a dictionary containing the data required by the **SA-SOR** metric, including `gt_masks`, `segmaps`, `gt_ranks`, and `rank_scores`.
 >3. The `gt_masks` is a list containing ground truth masks of `m` salient instances. The elements in `gt_mask` have the shape of `h x w`, where `h` and `w` are the height and width of the testing image.
@@ -12,8 +14,8 @@ In order to run the code, please prepare the `input_data` following the rules be
 In order to be more concise, we constructed the following structure tree:
 
 ```
--- **input_data** #list
-   | -- img_data #dict
+-- input_data #list
+   | -- img_data_1 #dict
    |    | -- gt_masks #list
    |    | -- | mask_1 #shape:h*w
    |    | -- | ...
@@ -27,4 +29,6 @@ In order to be more concise, we constructed the following structure tree:
    |    | -- | rank_score_0 #float
    |    | -- | ...
    |    | -- | rank_score_n #float
+   | -- ...
+   | -- img_data_N #dict
 ```
