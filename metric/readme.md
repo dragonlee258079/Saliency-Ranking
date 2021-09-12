@@ -37,4 +37,4 @@ In order to be more concise, we constructed the following structure tree:
 
 ### Run the code
 
-Run `evalu(input_data, iou_thread=0.5)`. 
+Run `evalu(input_data, iou_thread=0.5)`.
