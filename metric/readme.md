@@ -1,6 +1,7 @@
 This is the code for the **SA-SOR** metric proposed in the paper. 
 
-![avatar](SA-SOR.png)
+<center>
+<img src=https://github.com/dragonlee258079/Saliency-Ranking/tree/main/metric/SA-SOR.png>
 
 ### Input data construction
 
