@@ -12,11 +12,19 @@ In order to run the code, please prepare the `input_data` following the rules be
 In order to be more concise, we constructed the following structure tree:
 
 ```
--- input_data
-   | -- img_data
-   |    | -- gt_masks
-   |    | -- | mask_1 (h * w)
-   |    | -- segmasks
+-- input_data #list
+   | -- img_data #dict
+   |    | -- gt_masks #list
+   |    | -- | mask_1 #shape:h*w
+   |    | -- | ...
+   |    | -- | mask_m #shape:h*w
+   |    | -- segmasks #array shape:n*h*w
    |    | -- gt_ranks
+   |    | -- | gt_rank_level_0 #integer
+   |    | -- | ...
+   |    | -- | gt_rank_level_m #integer
    |    | -- rank_scores
+   |    | -- | rank_score_0 #float
+   |    | -- | ...
+   |    | -- | rank_score_n #float
 ```
