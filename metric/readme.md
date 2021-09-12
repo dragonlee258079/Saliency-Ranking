@@ -19,11 +19,11 @@ In order to be more concise, we constructed the following structure tree:
    |    | -- | ...
    |    | -- | mask_m #shape:h*w
    |    | -- segmasks #array shape:n*h*w
-   |    | -- gt_ranks
+   |    | -- gt_ranks #list
    |    | -- | gt_rank_level_0 #integer
    |    | -- | ...
    |    | -- | gt_rank_level_m #integer
-   |    | -- rank_scores
+   |    | -- rank_scores #list
    |    | -- | rank_score_0 #float
    |    | -- | ...
    |    | -- | rank_score_n #float
