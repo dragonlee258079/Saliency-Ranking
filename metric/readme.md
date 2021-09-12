@@ -12,7 +12,7 @@ In order to run the code, please prepare the `input_data` following the rules be
 In order to be more concise, we constructed the following structure tree:
 
 ```
--- input_data #list
+-- **input_data** #list
    | -- img_data #dict
    |    | -- gt_masks #list
    |    | -- | mask_1 #shape:h*w
