@@ -1,5 +1,7 @@
 This is the code for the **SA-SOR** metric proposed in the paper. 
 
+### Input data construction
+
 In order to run the code, please prepare the `input_data` following the rules below:
 
 Suppose we have `N` images for testing. Each image containing `m` ground truth salient instances. And the number of the predicted salient instances is `n`. 
@@ -32,3 +34,7 @@ In order to be more concise, we constructed the following structure tree:
    | -- ...
    | -- img_data_N #dict
 ```
+
+### Run the code
+
+Run `evalu(input_data, iou_thread=0.5)`. 
