@@ -23,5 +23,6 @@ cd Saliency-Ranking && python -m pip install -e .
 # CC=clang CXX=clang++ python -m pip install -e .
 ```
 
-To __rebuild__ detectron2 that's built from a local clone, use **rm -rf build/ **/*.so** to clean the
+#### NOTE
+To __rebuild__ detectron2 that's built from a local clone, use `rm -rf build/ **/*.so` to clean the
 old build first. You often need to rebuild detectron2 after reinstalling PyTorch.
