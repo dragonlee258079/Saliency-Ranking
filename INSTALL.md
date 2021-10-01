@@ -12,10 +12,7 @@ This repo is based on [detectron2](https://github.com/facebookresearch/detectron
 
 After having the above dependencies and gcc & g++ ≥ 5, run:
 ```
-python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
-# (add --user if you don't have permission)
-
-# Or, to install it from a local clone:
+# install it from a local clone:
 git clone https://github.com/dragonlee258079/Saliency-Ranking.git
 cd Saliency-Ranking && python -m pip install -e .
 
