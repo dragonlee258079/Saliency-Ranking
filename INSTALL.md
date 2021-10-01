@@ -16,12 +16,12 @@ python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 # (add --user if you don't have permission)
 
 # Or, to install it from a local clone:
-git clone https://github.com/facebookresearch/detectron2.git
-cd detectron2 && python -m pip install -e .
+git clone https://github.com/dragonlee258079/Saliency-Ranking.git
+cd Saliency-Ranking && python -m pip install -e .
 
 # Or if you are on macOS
 # CC=clang CXX=clang++ python -m pip install -e .
 ```
 
-To __rebuild__ detectron2 that's built from a local clone, use `rm -rf build/ **/*.so` to clean the
+To __rebuild__ detectron2 that's built from a local clone, use **rm -rf build/ **/*.so** to clean the
 old build first. You often need to rebuild detectron2 after reinstalling PyTorch.
