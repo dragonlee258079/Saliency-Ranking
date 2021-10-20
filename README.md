@@ -34,7 +34,7 @@ Download the datatset from [Baidu Driver](https://pan.baidu.com/s/1vzH_av0zCFhTL
 2. Run `python ./tool/plain_train_net.py`. 
 3. The trained model will be saved in `./output` folder. Additionally, the evaluaion results produced during training process will be saved    in `./output/SA_SOR.txt` and            `./output/MAE.txt`. 
 ## Testing model
-1. Download our trained model from [Baidu Driver]() or [Google Driver](). Rename it as 'final_model.pth' and put it into `./model` folder.
+1. Download our trained model from [Baidu Driver](https://pan.baidu.com/s/1otL_RvGaS1f91TsqvLg2ng)(fhz7) or [Google Driver](). Rename it as 'final_model.pth' and put it into `./model` folder.
 2. Run `python ./tool/plain_test_net.py`.
 3. The prediction images will be saved in `./prediction`.  And the metric score, **SA_SOR** and MAE, will be printed.
 
