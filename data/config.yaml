@@ -1,0 +1,61 @@
+MODEL:
+  META_ARCHITECTURE: "RankSaliencyNetwork"
+  BACKBONE:
+    NAME: "build_resnet_fpn_backbone"
+  BOTTOMUP_FUSE:
+    NAME: "build_resnet_fuse"
+    CORE_LAYER: '1'
+  RELATION_HEAD:
+    NAME: "RelationHead"
+    POOLER_EXPAND_RATIO: 2
+    POOLER_RESOLUTION: 7
+    POOLER_SCALES: (0.125,)
+    POOLER_SAMPLING_RATIO: 2
+    MLP_HEAD_DIM: 1024
+    FEATURE_NUM: 4
+    Relation_Unit_Nums: 8
+  RESNETS:
+    OUT_FEATURES: ["res2", "res3", "res4", "res5"]
+  FPN:
+    IN_FEATURES: ["res2", "res3", "res4", "res5"]
+    IN_STRIDES: [4, 8, 16, 32]
+    IN_CHANNELS: [256, 512, 1024, 2048]
+  ANCHOR_GENERATOR:
+    SIZES: [[32], [64], [128], [256], [512]]  # One size for each in feature map
+    ASPECT_RATIOS: [[0.5, 1.0, 2.0]]  # Three aspect ratios (same for all in feature maps)
+  RPN:
+    IN_FEATURES: ["p2", "p3", "p4", "p5", "p6"]
+    PRE_NMS_TOPK_TRAIN: 2000  # Per FPN level
+    PRE_NMS_TOPK_TEST: 1000  # Per FPN level
+    # Detectron1 uses 2000 proposals per-batch,
+    # (See "modeling/rpn/rpn_outputs.py" for details of this legacy issue)
+    # which is approximately 1000 proposals per-image since the default batch size for FPN is 2.
+    POST_NMS_TOPK_TRAIN: 1000
+    POST_NMS_TOPK_TEST: 1000
+  ROI_HEADS:
+    NAME: "StandardROIHeads"
+    IN_FEATURES: ["p2", "p3", "p4", "p5"]
+  ROI_BOX_HEAD:
+    NAME: "FastRCNNConvFCHead"
+    NUM_FC: 2
+    POOLER_RESOLUTION: 7
+    PERSON_HEAD: "FastRCNNFCHead"
+  ROI_MASK_HEAD:
+    NAME: "MaskRCNNConvUpsampleHead"
+    NUM_CONV: 4
+    POOLER_RESOLUTION: 14
+DATASETS:
+  TRAIN: ("/disk2/lilong/Rank_Saliency/Dataset/dataset_train.pkl",)
+  TEST: ("/disk2/lilong/Rank_Saliency/Dataset/dataset_test.pkl",)
+SOLVER:
+  IMS_PER_BATCH: 1
+  BASE_LR: 0.00001
+  STEPS: (150000, 180000)
+  MAX_ITER: 200000
+  CHECKPOINT_PERIOD: 10000
+TEST:
+  EVAL_PERIOD: 10000
+INPUT:
+  MIN_SIZE_TRAIN: (640, 672, 704, 736, 768, 800)
+VERSION: 2
+OUTPUT_DIR: '/disk2/lilong/Rank_Saliency/Models'
