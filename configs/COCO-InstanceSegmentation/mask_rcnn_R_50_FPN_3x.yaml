@@ -1,0 +1,9 @@
+_BASE_: "../Base-RCNN-FPN.yaml"
+MODEL:
+  WEIGHTS: "/disk2/lilong/Rank_Saliency/Pre_Model/model_final.pth"
+  MASK_ON: True
+  RESNETS:
+    DEPTH: 50
+SOLVER:
+  STEPS: (150000, 180000)
+  MAX_ITER: 200000
