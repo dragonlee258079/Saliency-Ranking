@@ -43,6 +43,7 @@ Download the datatset from [Baidu Driver](https://pan.baidu.com/s/1vzH_av0zCFhTL
 
 ## Result
 ![alt_text](./qualitative.png)
+The prediction results of our dataset can be download from [prediction](https://pan.baidu.com/s/1ysWXDwHhDU_MQZL8s8xt9Q) (k1jr).
 
 ## Metric
 We propose a new evaluation metirc for this task, which comprehensively considers salient instance detection, segmentation, and ranking performance. See [SA-SOR](./metric).
