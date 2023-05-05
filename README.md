@@ -51,3 +51,5 @@ The prediction results of our dataset can be download from [prediction](https://
 
 ## Metric
 We propose a new evaluation metirc for this task, which comprehensively considers salient instance detection, segmentation, and ranking performance. See [SA-SOR](./metric).
+
+We test the SOR metric of our model by first predicting the saliency maps via the test.py in our code and then feeding these saliency maps to the official SOR code (a matlab code can be download from [SOD code](https://pan.baidu.com/s/19onIw5tztUOG1hpHWNHsHw)(dems)).
