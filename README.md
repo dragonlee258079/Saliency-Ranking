@@ -31,6 +31,18 @@ Download the datatset from [Baidu Driver](https://pan.baidu.com/s/1p8XVoBllw-re-
    |   |-- |-- |-- | COCO_val2014_000000000192.png ...
 ````
 
+````
+-- data
+   |-- MT_Blowhole
+   |   |-- | Imgs | exp1_num_3667.jpg
+   |   |-- | Imgs | exp1_num_3667.png
+   |-- MT_Break
+   |-- MT_Crack
+   |-- MT_Fray
+   |-- MT_Free
+   |-- MT_Uneven
+````
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 ## Training model
